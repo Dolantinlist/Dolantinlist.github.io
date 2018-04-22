@@ -6,18 +6,35 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018/4 | Dolantin</title>
+  <title>论文笔记:Matrix Factorization Techniques for Recommender System | Dolantin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="没成果的科研狗，不划水的小透明">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Dolantin">
-<meta property="og:url" content="http://yoursite.com/archives/2018/04/index.html">
+  <meta name="description" content="矩阵分解早期开创性的经典文章：矩阵分解技术在推荐系统中的应用Koren, Y., Bell, R., &amp;amp; Volinsky, C. (2009). Matrix factorization techniques for recommender systems. Computer, 42(8), 30–37.要解决的问题依旧是从已知的数据——用户对一些项目(item)的反馈来预测未知——用户">
+<meta name="keywords" content="论文笔记,recommendation">
+<meta property="og:type" content="article">
+<meta property="og:title" content="论文笔记:Matrix Factorization Techniques for Recommender System">
+<meta property="og:url" content="http://yoursite.com/2018/04/22/论文笔记-Matrix-Factorization-Techniques-for-Recommender-System/index.html">
 <meta property="og:site_name" content="Dolantin">
-<meta property="og:description" content="没成果的科研狗，不划水的小透明">
+<meta property="og:description" content="矩阵分解早期开创性的经典文章：矩阵分解技术在推荐系统中的应用Koren, Y., Bell, R., &amp;amp; Volinsky, C. (2009). Matrix factorization techniques for recommender systems. Computer, 42(8), 30–37.要解决的问题依旧是从已知的数据——用户对一些项目(item)的反馈来预测未知——用户">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1783609-7f8f10237df348f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1783609-667ede6831079668.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1783609-be373fc6d7f8c520.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1783609-8cfeeda80ebdab44.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1783609-8fd92811bbb71db0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1783609-d3095ddb465c074c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1783609-57962bf9cf93986c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1783609-8802e01c807efc4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1783609-d2c91b93b01c4c16.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1783609-e06ef8d924217c68.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1783609-8c787d2d5ead7099.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1783609-c73a7f0e97d34f34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1783609-40cc7e3b3b049b5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1783609-c221ccddaa37c326.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-04-22T12:00:50.802Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Dolantin">
-<meta name="twitter:description" content="没成果的科研狗，不划水的小透明">
+<meta name="twitter:title" content="论文笔记:Matrix Factorization Techniques for Recommender System">
+<meta name="twitter:description" content="矩阵分解早期开创性的经典文章：矩阵分解技术在推荐系统中的应用Koren, Y., Bell, R., &amp;amp; Volinsky, C. (2009). Matrix factorization techniques for recommender systems. Computer, 42(8), 30–37.要解决的问题依旧是从已知的数据——用户对一些项目(item)的反馈来预测未知——用户">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/1783609-7f8f10237df348f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
   
     <link rel="alternative" href="/atom.xml" title="Dolantin" type="application/atom+xml">
   
@@ -143,36 +160,75 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-论文笔记-Matrix-Factorization-Techniques-for-Recommender-System" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      论文笔记:Matrix Factorization Techniques for Recommender System
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/22/论文笔记-Matrix-Factorization-Techniques-for-Recommender-System/" class="archive-article-date">
+
+        
+        <a href="/2018/04/22/论文笔记-Matrix-Factorization-Techniques-for-Recommender-System/" class="archive-article-date">
   	<time datetime="2018-04-22T11:57:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-22</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/22/论文笔记-Matrix-Factorization-Techniques-for-Recommender-System/">论文笔记:Matrix Factorization Techniques for Recommender System</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>矩阵分解早期开创性的经典文章：矩阵分解技术在推荐系统中的应用<br>Koren, Y., Bell, R., &amp; Volinsky, C. (2009). Matrix factorization techniques for recommender systems. Computer, 42(8), 30–37.<br>要解决的问题依旧是从已知的数据——用户对一些项目(item)的反馈来预测未知——用户对其它项目的反馈。</p>
+<h4 id="推荐系统策略"><a href="#推荐系统策略" class="headerlink" title="推荐系统策略"></a>推荐系统策略</h4><ul>
+<li><em><strong>内容过滤(content filtering)</strong></em><br>对用户和项目都创建出能描述其特性的属性量，以便程序将用户和项目进行匹配。在音乐推荐上的应用较成功。</li>
+<li><strong><em>协同过滤(collaborative filtering)</em></strong><br>基于用户过去的行为，如对之前项目的明确反馈，来分析用户之间的关联、项目之间的关联，以推断出新的用户-项目关联。</li>
+<li>两者相比较而言，如果对内容过滤来说用户和项目的属性模糊且难以描述，则协同过滤是更优的选择。协同过滤往往更准确，但由于它对用户、项目的数据量要求，所以更受限于冷启动问题。<h6 id="协同过滤实现方法"><a href="#协同过滤实现方法" class="headerlink" title="协同过滤实现方法"></a>协同过滤实现方法</h6></li>
+<li><p><strong><em>近邻法(neighborhood methods)</em></strong><br>基于用户与用户间的联系和项目与项目间的联系，认为喜欢项目I1的用户U1也会喜欢同样喜欢I1的其它用户喜欢的项目。</p>
+<a id="more"></a>
+<p><img src="https://upload-images.jianshu.io/upload_images/1783609-7f8f10237df348f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Figure1"><br>如图，绿色线表示正向反馈，则基于近邻法，Joe很可能喜欢另外三人都喜欢的#1。</p>
+</li>
+<li><p><strong><em>潜在因素模型(latent factor models)</em></strong><br>从用户对项目的评分中推断出若干属性（20-100），用以反映用户和项目的特征。<br>例如下图，用两个维度来描述用户和电影，以估计用户对电影的喜爱程度。<br><img src="https://upload-images.jianshu.io/upload_images/1783609-667ede6831079668.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Figure2"></p>
+</li>
+</ul>
+<h4 id="矩阵分解法"><a href="#矩阵分解法" class="headerlink" title="矩阵分解法"></a>矩阵分解法</h4><p>   优秀的潜在因素模型往往是基于<em>矩阵分解法</em>的，在最基本的形式中，矩阵分解法从已知的用户项目评分中推断出两个向量，用来分别描述用户和项目的属性。<br>  推荐系统的输入数据有很多来源，其中包括<em><strong>明确反馈(explicit feedback)</strong></em>和<em><strong>不明确反馈(implicit feedback)</strong></em>.<br>  明确反馈表示评分、点赞、踩等明确的喜好表达。但明确反馈的数据往往是稀疏的，所以为了增强矩阵分解法的性能，我们选择综合用户的不明确的反馈进行推断。不明确反馈包括用户的浏览、搜索或是鼠标停留点等。</p>
+<ul>
+<li><p>######基本的矩阵分解模型<br>对用户u，使用在f维空间上的向量pu来描述用户对f个属性值的喜好程度。对于项目i，使用f维空间中的向量qi描述i在f个属性上的表现。则两向量的内积一定程度上反映了用户u对项目i的感兴趣程度。<br><img src="https://upload-images.jianshu.io/upload_images/1783609-be373fc6d7f8c520.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Equation1"></p>
+<p>应用奇异值分解(singular value decomposition,SVD)来解决pu和qi的求解问题。又由于数据稀疏问题，我们通过增补缺省值来提高SVD的性能。在此需要注意，大量不准确的增补会歪曲数据，对数据的过拟合也会影响最后的求解。为求解qi和pu，计算下式：<br><img src="https://upload-images.jianshu.io/upload_images/1783609-8cfeeda80ebdab44.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Equation 2"><br>k为所有已知评分r(u,i)的(u,i)点集。</p>
+</li>
+<li><p>######计算方法</p>
+<ul>
+<li><em><strong>随机梯度下降法(stochastic gradient descent)</strong></em><br>计算出每次的预测误差e，结合下降梯度参数γ来循环修正qi和pu。<br><img src="https://upload-images.jianshu.io/upload_images/1783609-8fd92811bbb71db0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="SGD1"><br><img src="https://upload-images.jianshu.io/upload_images/1783609-d3095ddb465c074c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="SGD2"><br>此方法实现比较简单，收敛快，在某些情况下优于ALS。</li>
+<li><p><em><strong>交替最小二乘法(Alternating least squares)</strong></em><br>对于Eauation 2而言，每次确定qi和pu中的一个，另一个就可以通过二次方程的最小值问题进行求解。这样交替求解可达到最终结果收敛。</p>
+<p>相比较来说，SGD比ALS更快更简便，而ALS可以并行，适用于密集数据的情况。</p>
+</li>
+</ul>
+</li>
+<li><p>######修正偏差<br>根据用户u的评分习惯（评分偏高或偏低），项目I的普遍受欢迎情况（质量较高或较低）及所有用户和项目的全局平均评分，设定三个修正值：bu、bi、μ。<br><img src="https://upload-images.jianshu.io/upload_images/1783609-57962bf9cf93986c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Equation 3 "><br><img src="https://upload-images.jianshu.io/upload_images/1783609-8802e01c807efc4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Equation 4"></p>
+<p>因此进一步将Equation 2完善为：<br><img src="https://upload-images.jianshu.io/upload_images/1783609-d2c91b93b01c4c16.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Equation 5"></p>
+</li>
+<li><p>######增加更多数据源<br>针对冷启动问题，在输入数据中增加被用户u表现出不明确倾向的项目集N(u),将N(u)中每个项目的Xi相加并标准化：<br><img src="https://upload-images.jianshu.io/upload_images/1783609-e06ef8d924217c68.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="considering the implicit preference"></p>
+<p>另外增加用布尔值描述用户u的属性集A(u),来界定用户的年龄、收入等属性。针对每个属于A(u)的属性a，均对应一个f维空间的向量Ya来描述该特征人群的喜好。综合上述考虑，将Equation1完善为：</p>
+</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/1783609-8c787d2d5ead7099.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Equation 6"></p>
+<ul>
+<li><p>######增加时间维度<br>考虑到某个项目的受欢迎程度bi、用户的打分偏好bu和用户的喜好pu是随时间变化的，我们增加时间维度，将Equation 1修正为：<br><img src="https://upload-images.jianshu.io/upload_images/1783609-c73a7f0e97d34f34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Equation 7"></p>
+</li>
+<li><p>######增加置信度<br>  由于水军等因素的存在，有些评分数据的可信度较低。另外由于一些偶然因素的影响，用户的行为会出现一定随机性。在处理数据时这些因素都需要被排除，如果不增加置信度参数的话，最终预测结果会被歪曲。因此我们在矩阵分解中增加置信度参数，将Equation2修正如下：<br><img src="https://upload-images.jianshu.io/upload_images/1783609-40cc7e3b3b049b5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Equation 8"></p>
+</li>
+</ul>
+<h4 id="矩阵分解法的修正结果比较"><a href="#矩阵分解法的修正结果比较" class="headerlink" title="矩阵分解法的修正结果比较"></a>矩阵分解法的修正结果比较</h4><p>   用Netflix的数据集来对以上提到的各种协同过滤方法的准确度作比较。用来评估的值是均方误差RMSE，RMSE越小表示预测结果越准确。<br><img src="https://upload-images.jianshu.io/upload_images/1783609-c221ccddaa37c326.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="accuracy comparison"><br>由图可见，增加时间维度和不明确反馈是提高预测准确率的关键步骤。</p>
+<p>该篇论文从协同过滤引出潜在因素模型，进而引出矩阵分解法，及其修正偏差、增加数据源、增加时间纬度后的改进。总而言之，在协同过滤的推荐系统中，矩阵分解法有着重要地位。</p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -188,61 +244,68 @@
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/22/论文笔记：Caching-aware-Recommendations-Nudging-User-Preferences-towards-better-Caching-Performance/" class="archive-article-date">
-  	<time datetime="2018-04-22T10:30:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-22</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/04/22/论文笔记：Caching-aware-Recommendations-Nudging-User-Preferences-towards-better-Caching-Performance/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">论文笔记：Caching-aware Recommendations: Nudging User Preferences towards better Caching Performance</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/22/论文笔记：Caching-aware-Recommendations-Nudging-User-Preferences-towards-better-Caching-Performance/">论文笔记：Caching-aware Recommendations: Nudging User Preferences towards better Caching Performance</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">论文笔记</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">recommendation</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#推荐系统策略"><span class="toc-number">1.</span> <span class="toc-text">推荐系统策略</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#协同过滤实现方法"><span class="toc-number">1.0.1.</span> <span class="toc-text">协同过滤实现方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#矩阵分解法"><span class="toc-number">2.</span> <span class="toc-text">矩阵分解法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#矩阵分解法的修正结果比较"><span class="toc-number">3.</span> <span class="toc-text">矩阵分解法的修正结果比较</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -265,8 +328,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

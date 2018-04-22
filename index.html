@@ -145,6 +145,91 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-论文笔记-Matrix-Factorization-Techniques-for-Recommender-System" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/22/论文笔记-Matrix-Factorization-Techniques-for-Recommender-System/">论文笔记:Matrix Factorization Techniques for Recommender System</a>
+    </h1>
+  
+
+        
+        <a href="/2018/04/22/论文笔记-Matrix-Factorization-Techniques-for-Recommender-System/" class="archive-article-date">
+  	<time datetime="2018-04-22T11:57:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>矩阵分解早期开创性的经典文章：矩阵分解技术在推荐系统中的应用<br>Koren, Y., Bell, R., &amp; Volinsky, C. (2009). Matrix factorization techniques for recommender systems. Computer, 42(8), 30–37.<br>要解决的问题依旧是从已知的数据——用户对一些项目(item)的反馈来预测未知——用户对其它项目的反馈。</p>
+<h4 id="推荐系统策略"><a href="#推荐系统策略" class="headerlink" title="推荐系统策略"></a>推荐系统策略</h4><ul>
+<li><em><strong>内容过滤(content filtering)</strong></em><br>对用户和项目都创建出能描述其特性的属性量，以便程序将用户和项目进行匹配。在音乐推荐上的应用较成功。</li>
+<li><strong><em>协同过滤(collaborative filtering)</em></strong><br>基于用户过去的行为，如对之前项目的明确反馈，来分析用户之间的关联、项目之间的关联，以推断出新的用户-项目关联。</li>
+<li>两者相比较而言，如果对内容过滤来说用户和项目的属性模糊且难以描述，则协同过滤是更优的选择。协同过滤往往更准确，但由于它对用户、项目的数据量要求，所以更受限于冷启动问题。<h6 id="协同过滤实现方法"><a href="#协同过滤实现方法" class="headerlink" title="协同过滤实现方法"></a>协同过滤实现方法</h6></li>
+<li><p><strong><em>近邻法(neighborhood methods)</em></strong><br>基于用户与用户间的联系和项目与项目间的联系，认为喜欢项目I1的用户U1也会喜欢同样喜欢I1的其它用户喜欢的项目。</p>
+        
+          <a class="article-more-a" href="/2018/04/22/论文笔记-Matrix-Factorization-Techniques-for-Recommender-System/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">论文笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">recommendation</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/04/22/论文笔记-Matrix-Factorization-Techniques-for-Recommender-System/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-论文笔记：Caching-aware-Recommendations-Nudging-User-Preferences-towards-better-Caching-Performance" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -168,7 +253,7 @@
         <p>这篇文章针对以视频网站为代表的内容提供商，提出了一种算法，用CDN边缘节点的缓存内容来一定程度上修正根据用户喜好生成的用户推荐，以期提高CDN的缓存命中率来降低延迟，提高用户体验。</p>
 <h4 id="CDN背景知识补充"><a href="#CDN背景知识补充" class="headerlink" title="CDN背景知识补充"></a>CDN背景知识补充</h4><p>　　<a href="https://baijia.baidu.com/s?old_id=126615" target="_blank" rel="noopener">https://baijia.baidu.com/s?old_id=126615</a>  图解CDN<br>　　<a href="http://www.cnblogs.com/tinywan/p/6067131.html" target="_blank" rel="noopener">http://www.cnblogs.com/tinywan/p/6067131.html</a> CDN学习笔记 </p>
 <ol>
-<li><strong>瓶颈</strong><br>　　第一公里——网站接入互联网的带宽<br>　　运营商互联互通问题<br>　　区域互联互通，骨干网带宽瓶颈<br>　　最后一公里，用户带宽</li></ol>
+<li><strong>瓶颈</strong><br>　　第一公里——网站接入互联网的带宽<br>　　运营商互联互通问题<br>　　区域互联互通，骨干网带宽瓶颈<br>　　最后一公里，用户带宽
         
           <a class="article-more-a" href="/2018/04/22/论文笔记：Caching-aware-Recommendations-Nudging-User-Preferences-towards-better-Caching-Performance/#more">more >></a>
         
