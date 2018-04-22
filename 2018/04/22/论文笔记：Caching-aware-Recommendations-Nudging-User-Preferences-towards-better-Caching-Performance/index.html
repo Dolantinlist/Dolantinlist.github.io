@@ -27,7 +27,7 @@
 <meta property="og:image" content="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395779/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/27fd239b-356c-49af-8474-2cb1d02e31c5.png">
 <meta property="og:image" content="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395816/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/f6a469ab-b917-4fcf-b048-36f2b821214b.png">
 <meta property="og:image" content="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395775/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/8bf1c52e-91f9-4eaa-8c7e-568f9039721e.png">
-<meta property="og:updated_time" content="2018-04-22T11:50:20.694Z">
+<meta property="og:updated_time" content="2018-04-22T14:09:44.365Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="论文笔记：Caching-aware Recommendations: Nudging User Preferences towards better Caching Performance">
 <meta name="twitter:description" content="这篇文章针对以视频网站为代表的内容提供商，提出了一种算法，用CDN边缘节点的缓存内容来一定程度上修正根据用户喜好生成的用户推荐，以期提高CDN的缓存命中率来降低延迟，提高用户体验。 CDN背景知识补充　　https://baijia.baidu.com/s?old_id=126615  图解CDN　　http://www.cnblogs.com/tinywan/p/6067131.html CDN">
@@ -66,7 +66,7 @@
 		  <h1 class="header-author"><a href="/">Dolantin</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">无成果的科研狗，不划水的小透明</p>
+		<p class="header-subtitle">没成果的科研狗，不划水的小透明</p>
 		
 
 		<nav class="header-menu">
@@ -124,7 +124,7 @@
 			  <h1 class="header-author js-header-author">Dolantin</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>无成果的科研狗，不划水的小透明<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>没成果的科研狗，不划水的小透明<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -191,7 +191,7 @@
       
         <p>这篇文章针对以视频网站为代表的内容提供商，提出了一种算法，用CDN边缘节点的缓存内容来一定程度上修正根据用户喜好生成的用户推荐，以期提高CDN的缓存命中率来降低延迟，提高用户体验。</p>
 <h4 id="CDN背景知识补充"><a href="#CDN背景知识补充" class="headerlink" title="CDN背景知识补充"></a>CDN背景知识补充</h4><p>　　<a href="https://baijia.baidu.com/s?old_id=126615" target="_blank" rel="noopener">https://baijia.baidu.com/s?old_id=126615</a>  图解CDN<br>　　<a href="http://www.cnblogs.com/tinywan/p/6067131.html" target="_blank" rel="noopener">http://www.cnblogs.com/tinywan/p/6067131.html</a> CDN学习笔记 </p>
-<ol>
+<ul>
 <li><strong>瓶颈</strong><br>　　第一公里——网站接入互联网的带宽<br>　　运营商互联互通问题<br>　　区域互联互通，骨干网带宽瓶颈<br>　　最后一公里，用户带宽<a id="more"></a></li>
 <li><strong>CDN系统</strong><br>　　分发服务系统：将内容提供给用户、与源站点内容同步、存储在本地<br>　　负载均衡系统：确定提供给用户的最终访问地址<br>　　运营管理系统</li>
 <li><strong>CDN关键技术</strong><br>　　缓存算法决定命中率、源服务器压力、POP节点存储能力<br>　　分发能力取决于IDC能力和IDC策略性分布<br>　　负载均衡（智能调度）决定最佳路由、响应时间、可用性、服务质量<br>　　基于DNS的负载均衡以CNAME实现[to cluster]，智取最优节点服务，<br>　　缓存点有客户端浏览器缓存、本地DNS服务器缓存<br>　　缓存内容有DNS地址缓存、客户请求内容缓存、动态内容缓存<br>　　支持协议如静动态加速（图片加速、https带证书加速）、下载加速、流媒体加速、企业应用加速、手机应用加速<h4 id="论文针对的问题"><a href="#论文针对的问题" class="headerlink" title="论文针对的问题"></a>论文针对的问题</h4></li>
@@ -207,7 +207,7 @@
 <li>这是一篇A会文章，不得不说行文严谨。文章中提到一些点，虽然不会展开来讲，但还是给出了参考文献，例如用户的喜好可能随时间变化等等。</li>
 <li>解决的问题很实用，针对的是我们日常生活中常用的服务，并且很有代表性——弥合了“面向群体”和“面向个人”之间的矛盾。在用户可接受的范围内，将一部分大众喜好替换掉用户的小众喜好以求提供给用户更低的访问延迟，降低中心服务器压力等等。</li>
 <li>具体来讲，这篇文章的假定了如下场景：用户位置不变，边缘节点服务特定用户群体，不存在跨区域服务。貌似也不完全符合CDN的应用场景，只能说有借鉴意义吧。</li>
-</ol>
+</ul>
 
       
 
@@ -415,6 +415,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">recommendation</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Network Embedding</a>
               </li>
             
             <div class="clearfix"></div>

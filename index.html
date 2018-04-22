@@ -49,7 +49,7 @@
 		  <h1 class="header-author"><a href="/">Dolantin</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">无成果的科研狗，不划水的小透明</p>
+		<p class="header-subtitle">没成果的科研狗，不划水的小透明</p>
 		
 
 		<nav class="header-menu">
@@ -107,7 +107,7 @@
 			  <h1 class="header-author js-header-author">Dolantin</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>无成果的科研狗，不划水的小透明<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>没成果的科研狗，不划水的小透明<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -153,6 +153,91 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-论文笔记-Structural-Deep-Network-Embedding" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/22/论文笔记-Structural-Deep-Network-Embedding/">论文笔记: Structural Deep Network Embedding</a>
+    </h1>
+  
+
+        
+        <a href="/2018/04/22/论文笔记-Structural-Deep-Network-Embedding/" class="archive-article-date">
+  	<time datetime="2018-04-22T13:31:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>　　<strong>SDNE</strong>是基于深度学习处理网络嵌入问题的方法之一，另一比较重要的基于深度学习的方法是同样发表于2016年的<strong>DNGR</strong>。与DNGR相比，SDNE在利用神经网络挖掘高阶相似性的同时，利用易于捕捉的一阶相似性作为已知的监督信息。<br>　　论文的主要创新点在于将可用于降维的自编码机应用于network embedding，利用多层非线性函数捕捉网络的高度非线性结构，并利用first-order作为监督信息，并保留网络的局部结构，second-order作为无监督学习部分，保留网络的全局结构，从而整体构成一个半监督的深度学习模型。</p>
+<h4 id="问题概述"><a href="#问题概述" class="headerlink" title="问题概述"></a>问题概述</h4><p><strong>network embedding 的主要难点</strong></p>
+<ul>
+<li>网络结构高度非线性，使得简单线性模型无法应用到此类问题</li>
+<li>需同时保留局部结构和全局结构，不能顾此失彼</li>
+<li>数据稀疏，点与点间的连接稀少,提供的信息有限
+        
+          <a class="article-more-a" href="/2018/04/22/论文笔记-Structural-Deep-Network-Embedding/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">论文笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Network Embedding</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/04/22/论文笔记-Structural-Deep-Network-Embedding/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-论文笔记-Matrix-Factorization-Techniques-for-Recommender-System" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -261,7 +346,7 @@
       
         <p>这篇文章针对以视频网站为代表的内容提供商，提出了一种算法，用CDN边缘节点的缓存内容来一定程度上修正根据用户喜好生成的用户推荐，以期提高CDN的缓存命中率来降低延迟，提高用户体验。</p>
 <h4 id="CDN背景知识补充"><a href="#CDN背景知识补充" class="headerlink" title="CDN背景知识补充"></a>CDN背景知识补充</h4><p>　　<a href="https://baijia.baidu.com/s?old_id=126615" target="_blank" rel="noopener">https://baijia.baidu.com/s?old_id=126615</a>  图解CDN<br>　　<a href="http://www.cnblogs.com/tinywan/p/6067131.html" target="_blank" rel="noopener">http://www.cnblogs.com/tinywan/p/6067131.html</a> CDN学习笔记 </p>
-<ol>
+<ul>
 <li><strong>瓶颈</strong><br>　　第一公里——网站接入互联网的带宽<br>　　运营商互联互通问题<br>　　区域互联互通，骨干网带宽瓶颈<br>　　最后一公里，用户带宽
         
           <a class="article-more-a" href="/2018/04/22/论文笔记：Caching-aware-Recommendations-Nudging-User-Preferences-towards-better-Caching-Performance/#more">more >></a>
@@ -441,6 +526,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">recommendation</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Network Embedding</a>
               </li>
             
             <div class="clearfix"></div>
