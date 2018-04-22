@@ -6,18 +6,32 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018 | Dolantin</title>
+  <title>论文笔记：Caching-aware Recommendations: Nudging User Preferences towards better Caching Performance | Dolantin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="没成果的科研狗，不划水的小透明">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Dolantin">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+  <meta name="description" content="这篇文章针对以视频网站为代表的内容提供商，提出了一种算法，用CDN边缘节点的缓存内容来一定程度上修正根据用户喜好生成的用户推荐，以期提高CDN的缓存命中率来降低延迟，提高用户体验。 ####CDN背景知识补充　　https://baijia.baidu.com/s?old_id=126615  图解CDN　　http://www.cnblogs.com/tinywan/p/6067131.html">
+<meta name="keywords" content="论文笔记,recommendation">
+<meta property="og:type" content="article">
+<meta property="og:title" content="论文笔记：Caching-aware Recommendations: Nudging User Preferences towards better Caching Performance">
+<meta property="og:url" content="http://yoursite.com/2018/04/22/论文笔记：Caching-aware-Recommendations-Nudging-User-Preferences-towards-better-Caching-Performance/index.html">
 <meta property="og:site_name" content="Dolantin">
-<meta property="og:description" content="没成果的科研狗，不划水的小透明">
+<meta property="og:description" content="这篇文章针对以视频网站为代表的内容提供商，提出了一种算法，用CDN边缘节点的缓存内容来一定程度上修正根据用户喜好生成的用户推荐，以期提高CDN的缓存命中率来降低延迟，提高用户体验。 ####CDN背景知识补充　　https://baijia.baidu.com/s?old_id=126615  图解CDN　　http://www.cnblogs.com/tinywan/p/6067131.html">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395810/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/dfea6aac-d14e-4dfa-8763-5ceb027674b0.png">
+<meta property="og:image" content="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395790/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/50ed6863-73f1-43c6-a19a-77996b7e574a.png">
+<meta property="og:image" content="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395787/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/039f8498-a51e-4406-b25e-f1030248e035.png">
+<meta property="og:image" content="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395768/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/7fdf2096-931c-4ed1-ada0-129fd35cc6d5.png">
+<meta property="og:image" content="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395797/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/55cd1d1e-7780-4f82-8a9d-354da85757f3.png">
+<meta property="og:image" content="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395812/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/e178b284-5eb8-4a40-8ee9-06d93e315c42.png">
+<meta property="og:image" content="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395809/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/a0f0daf2-7bc2-4136-9397-e286bb46ddf9.png">
+<meta property="og:image" content="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395819/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/fc85cdcd-d53d-44e7-8a2e-65a6db051f7f.png">
+<meta property="og:image" content="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395779/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/27fd239b-356c-49af-8474-2cb1d02e31c5.png">
+<meta property="og:image" content="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395816/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/f6a469ab-b917-4fcf-b048-36f2b821214b.png">
+<meta property="og:image" content="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395775/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/8bf1c52e-91f9-4eaa-8c7e-568f9039721e.png">
+<meta property="og:updated_time" content="2018-04-22T11:43:45.628Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Dolantin">
-<meta name="twitter:description" content="没成果的科研狗，不划水的小透明">
+<meta name="twitter:title" content="论文笔记：Caching-aware Recommendations: Nudging User Preferences towards better Caching Performance">
+<meta name="twitter:description" content="这篇文章针对以视频网站为代表的内容提供商，提出了一种算法，用CDN边缘节点的缓存内容来一定程度上修正根据用户喜好生成的用户推荐，以期提高CDN的缓存命中率来降低延迟，提高用户体验。 ####CDN背景知识补充　　https://baijia.baidu.com/s?old_id=126615  图解CDN　　http://www.cnblogs.com/tinywan/p/6067131.html">
+<meta name="twitter:image" content="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395810/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/dfea6aac-d14e-4dfa-8763-5ceb027674b0.png">
   
     <link rel="alternative" href="/atom.xml" title="Dolantin" type="application/atom+xml">
   
@@ -143,36 +157,53 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-论文笔记：Caching-aware-Recommendations-Nudging-User-Preferences-towards-better-Caching-Performance" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/22/论文笔记：Caching-aware-Recommendations-Nudging-User-Preferences-towards-better-Caching-Performance/" class="archive-article-date">
-  	<time datetime="2018-04-22T10:30:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-22</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/22/论文笔记：Caching-aware-Recommendations-Nudging-User-Preferences-towards-better-Caching-Performance/">论文笔记：Caching-aware Recommendations: Nudging User Preferences towards better Caching Performance</a>
+    <h1 class="article-title" itemprop="name">
+      论文笔记：Caching-aware Recommendations: Nudging User Preferences towards better Caching Performance
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/04/22/论文笔记：Caching-aware-Recommendations-Nudging-User-Preferences-towards-better-Caching-Performance/" class="archive-article-date">
+  	<time datetime="2018-04-22T10:30:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这篇文章针对以视频网站为代表的内容提供商，提出了一种算法，用CDN边缘节点的缓存内容来一定程度上修正根据用户喜好生成的用户推荐，以期提高CDN的缓存命中率来降低延迟，提高用户体验。</p>
+<p>####CDN背景知识补充<br>　　<a href="https://baijia.baidu.com/s?old_id=126615" target="_blank" rel="noopener">https://baijia.baidu.com/s?old_id=126615</a>  图解CDN<br>　　<a href="http://www.cnblogs.com/tinywan/p/6067131.html" target="_blank" rel="noopener">http://www.cnblogs.com/tinywan/p/6067131.html</a> CDN学习笔记 </p>
+<ol>
+<li><strong>瓶颈</strong><br>　　第一公里——网站接入互联网的带宽<br>　　运营商互联互通问题<br>　　区域互联互通，骨干网带宽瓶颈<br>　　最后一公里，用户带宽</li>
+<li><strong>CDN系统</strong><br>　　分发服务系统：将内容提供给用户、与源站点内容同步、存储在本地<br>　　负载均衡系统：确定提供给用户的最终访问地址<br>　　运营管理系统</li>
+<li><strong>CDN关键技术</strong><br>　　缓存算法决定命中率、源服务器压力、POP节点存储能力<br>　　分发能力取决于IDC能力和IDC策略性分布<br>　　负载均衡（智能调度）决定最佳路由、响应时间、可用性、服务质量<br>　　基于DNS的负载均衡以CNAME实现[to cluster]，智取最优节点服务，<br>　　缓存点有客户端浏览器缓存、本地DNS服务器缓存<br>　　缓存内容有DNS地址缓存、客户请求内容缓存、动态内容缓存<br>　　支持协议如静动态加速（图片加速、https带证书加速）、下载加速、流媒体加速、企业应用加速、手机应用加速<br>####论文针对的问题</li>
+<li>假定CDN边缘节点服务一定范围内的用户，在决定CDN边缘节点的缓存内容时，算法会考虑该区域整体用户的需求——即缓存受该区域大多数用户欢迎的内容，以期获得最大的缓存命中率这一整体最优方案。</li>
+<li>但对于例如视频网站上的用户推荐系统来说，算法考虑的是推荐最符合该单个用户喜好的内容。</li>
+<li>缓存算法考虑用户群体喜好，而推荐算法考虑用户个人喜好，这中间的分歧将造成单个用户的小众喜好的内容不会被CDN边缘节点缓存。以致用户在点击某些推荐内容时将有较大的延迟。所以本篇文章致力于将缓存和推荐相结合，在一定限度内用大众喜好的已缓存内容替换掉单个用户的小众喜好推荐内容，以修正用户推荐，降低用户访问延迟，提高用户体验。<br>####问题建模</li>
+<li><strong>衡量单个内容和用户喜好的符合程度</strong><br>　　在本文随后的叙述中，内容用I（item），用户用U(user),缓存用C（cache）表示。对每个I和U都设立一个M维的向量f,维度M表示M个分类（例如足球、财经、美食、法律），f表示feature，以衡量内容I的分类属性和用户U的个人喜好。对于向量f，M个维度上的值的和为1.由此可定量化计算出用户U对某一内容I的喜好程度，并作出归一化处理：<br>　　<img src="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395810/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/dfea6aac-d14e-4dfa-8763-5ceb027674b0.png" alt=""><br>　　<img src="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395790/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/50ed6863-73f1-43c6-a19a-77996b7e574a.png" alt=""><br>　　得出的P<sup>pref</sup>即为归一化后的某用户对某内容的偏好程度，反映为下图中的黑色曲线（横轴为不同内容，纵轴为喜好程度）：<br>　　<img src="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395787/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/039f8498-a51e-4406-b25e-f1030248e035.png" alt=""><br>　　当需要推荐R个内容给该用户时，我们可以计算出该曲线，取Ppref值为top-R的I推荐给该用户。但由于我们之后要根据缓存内容来对推荐结果做修正，故将候选的推荐内容由top-R扩大到top-K,如横轴所示。top-K中的所有候选内容组成集合Wu。<br>　　但这种对候选内容的扩大显然对用户的喜好做出了变形，为确保偏离范围控制在一定限度内，我们引入Δu来衡量这种变形：<br>　　<img src="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395768/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/7fdf2096-931c-4ed1-ada0-129fd35cc6d5.png" alt=""><br>　　Δu计算出了当窗口从R扩大到K时，对该用户的喜好的最大偏离数。限定Δu小于一定值，可将窗口K的大小控制在用户可接受的范围内。</li>
+<li><strong>推荐与否对用户最终决策的影响</strong><br>　　显而易见的是，被推荐给用户的内容会有更大的几率被用户访问。我们用P<sup>req</sup>来表示某用户访问某视频的概率。令W（u,r）表示推荐对用户决策的影响，那么对于未被推荐的内容来说，其被访问的可能性只与用户对它的偏好有关：<br>　　<img src="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395797/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/55cd1d1e-7780-4f82-8a9d-354da85757f3.png" alt=""><br>　　对于被推荐内容来说，“推荐”以P<sup>rec</sup>这一参数增加了它们被访问的可能。在这里，我们可以忽略推荐时的位置和排序等因素，将不同I的Prec值都等概为1/R:<br>　　<img src="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395812/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/e178b284-5eb8-4a40-8ee9-06d93e315c42.png" alt=""><br>　　由此得出了用户对各内容的访问概率，为上图（Fig2）中的红色曲线。</li>
+<li><strong>建立最终问题模型</strong><br>　　  y(i)表示内容i是否被节点缓存,1代表缓存，0代表未缓存。x(u,i)表示内容i是否被推荐给用户u，1表示推荐，0表示未推荐。(7)约束了节点缓存能力，(8)限制了推荐数R,(10)限制了扩大窗口造成的对用户喜好的偏离，在以上约束下，求(6)式即命中率的最大值。<br>　　 <img src="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395809/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/a0f0daf2-7bc2-4136-9397-e286bb46ddf9.png" alt=""><br>####算法实现<br>　　 论文给出一种算法实现，分三步，描述如下：</li>
+<li>根据P<sup>pref</sup>计算出针对每个用户的top-R喜好结果拟推荐，即不是真的推荐给用户，而是仅作为算法的中间数据，记为集合RC<sup>in</sup>。同时算出top-K的集合Wu备用。</li>
+<li>根据区域内所有用户U 的top-R，计算出每一个P<sup>req</sup>(u,i),并在u维度上做求和，衡量出各个内容i在该区域的受欢迎程度<br><img src="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395819/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/fc85cdcd-d53d-44e7-8a2e-65a6db051f7f.png" alt=""><br>根据缓存能力的约束(7)，选出集合P进行缓存。</li>
+<li>根据缓存结果对推荐进行修正：<br>　　如果初始的推荐结果RC<sup>in</sup>都在P内，则不用修改。<br>　　对于<img src="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395779/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/27fd239b-356c-49af-8474-2cb1d02e31c5.png" alt="">,令<img src="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395816/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/f6a469ab-b917-4fcf-b048-36f2b821214b.png" alt="">,即F2为存在于窗口Wu和缓存P中，但不属于RC<sup>in</sup>的内容的集合，将此部分内容替换掉RCin中处于下方的F个内容，<img src="http://res.cloudinary.com/da3zgrfdw/image/upload/v1524395775/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/caching-aware%20recom/8bf1c52e-91f9-4eaa-8c7e-568f9039721e.png" alt="">.当然，替换后的推荐集合RCf中仍旧有可能有些内容(R-F-F1)是未被缓存的。<br>####心得总结</li>
+<li>这是一篇A会文章，不得不说行文严谨。文章中提到一些点，虽然不会展开来讲，但还是给出了参考文献，例如用户的喜好可能随时间变化等等。</li>
+<li>解决的问题很实用，针对的是我们日常生活中常用的服务，并且很有代表性——弥合了“面向群体”和“面向个人”之间的矛盾。在用户可接受的范围内，将一部分大众喜好替换掉用户的小众喜好以求提供给用户更低的访问延迟，降低中心服务器压力等等。</li>
+<li>具体来讲，这篇文章的假定了如下场景：用户位置不变，边缘节点服务特定用户群体，不存在跨区域服务。貌似也不完全符合CDN的应用场景，只能说有借鉴意义吧。</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -188,19 +219,58 @@
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
+
   
 
-    
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
 
 
           </div>
@@ -223,8 +293,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
